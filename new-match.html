@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meet your match</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Meet your match</a>
+      </div>
+    </nav>
+    <div class="container d-flex flex-column pt-5 pb-5 gap-2">
+      <div class="row">
+        <div class="col-11 col-lg-8 col-xl-7 mx-auto">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Crea nuovo match
+            </li>
+          </ol>
+
+          <h2 class="text-center">Crea nuovo match</h2>
+
+          <form>
+            <div class="mb-3">
+              <label for="sport" class="form-label">Sport</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleziona una sport...</option>
+                <option value="1">Tutti gli sport</option>
+                <option value="2">Tennis</option>
+                <option value="3">Calcio</option>
+                <option value="4">Basket</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="titolo" class="form-label">Titolo del match</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Scegli un titolo per l'evento es. Juve VS Milan"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label"
+                >Copertina del match</label
+              >
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <label for="data" class="form-label">Data</label>
+                <input
+                  type="data"
+                  class="form-control"
+                  placeholder="DD/MM/AAAA"
+                  aria-label="data"
+                />
+              </div>
+              <div class="col">
+                <label for="ora" class="form-label">Ora</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="-- : --"
+                  aria-label="ora"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Indirizzo</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Inserisci indirizzo"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="difficoltà" class="form-label"> Difficoltà</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleziona il livello di difficoltà</option>
+                <option value="1">Tutte le difficoltà</option>
+                <option value="2">Semplice</option>
+                <option value="3">Medio</option>
+                <option value="4">Pro</option>
+              </select>
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button type="button" class="btn btn-secondary py-2 me-2">
+                  Annulla
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-primary py-2"
+                  style="background-color: rgba(119, 73, 248, 1)"
+                >
+                  Crea match
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid border py-3">
+      <div class="row">
+        <div class="col d-flex justify-content-center fw-light">
+          iMatchfinder 2024
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

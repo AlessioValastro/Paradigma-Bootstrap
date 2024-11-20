@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meet your match</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <style>
+      .custom-hero {
+        background-image: url(public/hero.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+      }
+      .btn {
+        background-color: rgba(119, 73, 248, 1);
+      }
+      .custom-hour {
+        border: 1px solid rgba(119, 73, 248, 1);
+        border-radius: 7px;
+        overflow: hidden;
+      }
+      .custom-hour__link {
+        text-decoration: none;
+        color: rgba(119, 73, 248, 1);
+        padding: 7px 0;
+        border-left: 1px solid rgba(119, 73, 248, 1);
+      }
+      .custom-hour__link-active {
+        text-decoration: none;
+        background: rgba(119, 73, 248, 1);
+        color: white;
+        padding: 7px 0;
+      }
+      .custom-date {
+        font-size: 0.65rem;
+      }
+    </style>
+    <!-- navbar -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Meet your match</a>
+      </div>
+    </nav>
+
+    <!-- hero-->
+    <div
+      class="container-fluid d-flex flex-column justify-content-center custom-hero"
+    >
+      <div class="row text-center text-white">
+        <div class="col d-flex flex-column justify-content-center">
+          <h1>Crea la tua partita<br />e trova giocatori</h1>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col">
+          <a class="btn btn-primary" href="new-match.html">Crea un match</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- filters -->
+    <div class="container mt-4">
+      <div
+        class="row row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center"
+      >
+        <div class="col col-xl-2">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Oggi</option>
+            <option value="1">Domani</option>
+            <option value="2">Successive</option>
+          </select>
+        </div>
+        <div class="col col-xl-2">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Tutti gli sport</option>
+            <option value="1">Tennis</option>
+            <option value="2">Calcio</option>
+            <option value="3">Basket</option>
+          </select>
+        </div>
+        <div class="col col-xl-2">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Tutte le difficoltà</option>
+            <option value="1">Semplice</option>
+            <option value="2">Medio</option>
+            <option value="3">Pro</option>
+          </select>
+        </div>
+
+        <div class="col col-md-7 col-xl-4 offset-xl-2">
+          <div class="container">
+            <div class="row text-center custom-hour">
+              <a href="#" class="col custom-hour__link-active">Tutte</a>
+              <a href="#" class="col custom-hour__link">Mattina</a>
+              <a href="#" class="col custom-hour__link">Pomeriggio</a>
+              <a href="#" class="col custom-hour__link">Sera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- matches -->
+    <div class="container mt-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
+        <div class="col">
+          <div class="card">
+            <img src="public/partita.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lentini VS Siracusa</h5>
+              <p class="card-text fw-light">Calcio</p>
+              <p class="fw-lighter custom-date">
+                10/12/2024 Ore 18:30 @ Siracusa Stadium
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="public/partita.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lentini VS Siracusa</h5>
+              <p class="card-text fw-light">Calcio</p>
+              <p class="fw-lighter custom-date">
+                10/12/2024 Ore 18:30 @ Siracusa Stadium
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="public/partita.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lentini VS Siracusa</h5>
+              <p class="card-text fw-light">Calcio</p>
+              <p class="fw-lighter custom-date">
+                10/12/2024 Ore 18:30 @ Siracusa Stadium
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="public/partita.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lentini VS Siracusa</h5>
+              <p class="card-text fw-light">Calcio</p>
+              <p class="fw-lighter custom-date">
+                10/12/2024 Ore 18:30 @ Siracusa Stadium
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="public/partita.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lentini VS Siracusa</h5>
+              <p class="card-text fw-light">Calcio</p>
+              <p class="fw-lighter custom-date">
+                10/12/2024 Ore 18:30 @ Siracusa Stadium
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="public/partita.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lentini VS Siracusa</h5>
+              <p class="card-text fw-light">Calcio</p>
+              <p class="fw-lighter custom-date">
+                10/12/2024 Ore 18:30 @ Siracusa Stadium
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page navigation -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid border py-3 mt-4">
+      <div class="row">
+        <div class="col d-flex justify-content-center fw-light">
+          iMatchfinder 2024
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
