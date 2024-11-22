@@ -25,28 +25,13 @@
         background-position: center center;
         height: 300px;
       }
-      .btn {
-        background-color: rgba(119, 73, 248, 1);
-      }
-      .custom-hour {
-        border: 1px solid rgba(119, 73, 248, 1);
-        border-radius: 7px;
-        overflow: hidden;
-      }
-      .custom-hour__link {
-        text-decoration: none;
-        color: rgba(119, 73, 248, 1);
-        padding: 7px 0;
-        border-left: 1px solid rgba(119, 73, 248, 1);
-      }
-      .custom-hour__link-active {
-        text-decoration: none;
-        background: rgba(119, 73, 248, 1);
-        color: white;
-        padding: 7px 0;
-      }
+
       .custom-date {
         font-size: 0.65rem;
+      }
+
+      .btn-outline-primary{
+        font-size: .75rem;
       }
     </style>
     <!-- navbar -->
@@ -102,14 +87,12 @@
           </select>
         </div>
 
-        <div class="col col-md-7 col-xl-4 offset-xl-2">
-          <div class="container">
-            <div class="row text-center custom-hour">
-              <a href="#" class="col custom-hour__link-active">Tutte</a>
-              <a href="#" class="col custom-hour__link">Mattina</a>
-              <a href="#" class="col custom-hour__link">Pomeriggio</a>
-              <a href="#" class="col custom-hour__link">Sera</a>
-            </div>
+        <div class="col text-center col-md-7 col-xl-4 offset-xl-2">
+          <div class="btn-group w-100">
+            <button class="btn btn-outline-primary px-2">Tutte</button>
+            <button class="btn btn-outline-primary px-2">Mattina</button>
+            <button class="btn btn-outline-primary px-2">Pomeriggio</button>
+            <button class="btn btn-outline-primary px-2">Sera</button>
           </div>
         </div>
       </div>
